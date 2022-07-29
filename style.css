@@ -602,14 +602,18 @@ footer hr {
 
 
 /* RESPONSIVENESS */
+
+@media only screen and (max-width:320px){
+    .about:before{
+        height: 310% !important;
+    }
+}
+
 @media only screen and (max-width:768px) and (min-width:376px){
     
-    .about {
-        height: 283vh !important;
-    }
+    
 
     .about::before {
-        height: 300% !important;
         border-radius: 0 0 350px 350px !important;
     }
 }
@@ -668,13 +672,13 @@ footer hr {
 
     /* About section */
     .about {
-        height: 299vh;
+        height: fit-content;
         padding: 0 15px;
         justify-content: start;
     }
 
     .about::before {
-        height: 310%;
+        height: 300%;
         border-radius: 0 0 140px 140px;
     }
 
