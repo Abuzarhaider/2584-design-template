@@ -235,11 +235,11 @@ nav label {
 
 /* works */
 .works {
-    height: 100vh;
     background-color: #383838;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 50px;
 }
 
 /* works title */
@@ -699,7 +699,7 @@ footer hr {
 
     /* works */
     .works_seeMore{
-        margin-top: 30px;
+        display: none;
     }
 
 
