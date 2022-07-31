@@ -57,7 +57,7 @@ nav {
 }
 
 nav i {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 nav input {
@@ -67,6 +67,7 @@ nav input {
 nav label {
     cursor: pointer;
     display: none;
+    font-size: 18px;
 }
 
 
@@ -89,15 +90,6 @@ nav label {
     border-radius: 0 0 530px 550px;
     padding-bottom: 100px;
 }
-
-/* .about::before {
-    content: "";
-    background-color: #03c8a7;
-    height: 130%;
-    position: absolute;
-    width: 100%;
-    border-radius: 0 0 595px 610px;
-} */
 
 .about_text {
     text-align: center;
@@ -165,7 +157,9 @@ nav label {
 }
 
 .about hr {
-    border: 1px solid #aab1af;
+    border: none;
+    background-color: #aab1af;
+    height: 1px;
     margin: 15px 0px;
 }
 
@@ -242,7 +236,6 @@ nav label {
 /* works */
 .works {
     background-color: #383838;
-    /* padding-top: 190px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -351,7 +344,8 @@ nav label {
 
 .faq hr {
     margin: 30px 0;
-    border: 1px solid white;
+    height: 1px;
+    background-color: white;
     width: 65%;
 }
 
@@ -432,9 +426,9 @@ nav label {
 }
 
 .form_downDetails button {
-    height: 30px;
-    padding: 5px 15px;
-    font-size: 15px;
+    height: 35px;
+    padding: 8px 20px;
+    font-size: 17px;
     color: white;
     background-color: black;
     border-radius: 5px;
@@ -472,7 +466,9 @@ footer {
 }
 
 footer hr {
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    height: 1px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* footer second */
@@ -603,20 +599,6 @@ footer hr {
 
 /* RESPONSIVENESS */
 
-@media only screen and (max-width:320px){
-    /* .about:before{
-        height: 310% !important;
-    } */
-}
-
-@media only screen and (max-width:768px) and (min-width:376px){
-    
-    
-
-    /* .about::before {
-        border-radius: 0 0 350px 350px !important;
-    } */
-}
 
 
 @media only screen and (max-width:768px) {
@@ -678,11 +660,6 @@ footer hr {
         justify-content: start;
     }
 
-    /* .about::before {
-        height: 300%;
-        border-radius: 0 0 140px 140px;
-    } */
-
     .about_text {
         padding: 30px 0;
     }
@@ -719,9 +696,9 @@ footer hr {
 
 
     /* works */
-    /* .works {
-        padding-top: 110px;
-    } */
+    .works_seeMore{
+        padding: 15px 0;
+    }
 
 
 
@@ -778,10 +755,7 @@ footer hr {
         height: 35px;
         width: 48%;
         font-size: 16px;
-        border: none;
         border-bottom: 1px solid rgb(0, 0, 0);
-        background-color: transparent;
-        outline: none;
     }
 
     .upDetails_up {
@@ -807,16 +781,6 @@ footer hr {
         margin: 11px 0;
     }
 
-    .form_downDetails button {
-        height: 30px;
-        padding: 5px 15px;
-        font-size: 15px;
-        color: white;
-        background-color: black;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
 
 
 
@@ -826,7 +790,6 @@ footer hr {
     /* form */
     .form {
         height: 444px;
-        background-color: #383838;
         padding: 35px 15px;
         display: flex;
         flex-direction: column;
@@ -845,7 +808,6 @@ footer hr {
     }
 
     .form_details input {
-        height: 35px;
         width: 100%;
         margin: 8px 0;
     }
@@ -883,10 +845,6 @@ footer hr {
         margin: 0;
     }
 
-    .footer_firstDiv p {
-        color: rgb(207, 206, 206);
-    }
-
     /* footer second */
     .footer_second {
         display: block;
@@ -914,15 +872,7 @@ footer hr {
 
 @media only screen and (max-width:1024px) and (min-width:769px) {
 
-    .about {
-        height: 207vh;
-    }
-
-    .about::before {
-        content: "";
-        height: 225%;
-        border-radius: 0 0 350px 350px;
-    }
+    
 
     .about_offers {
         flex-flow: row wrap;
@@ -937,13 +887,6 @@ footer hr {
     }
     .premium{
         margin-top: 50px;
-    }
-
-
-
-    /* works */
-    .works{
-        padding-top: 125px;
     }
 
 }
