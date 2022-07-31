@@ -235,6 +235,7 @@ nav label {
 
 /* works */
 .works {
+    height: 100vh;
     background-color: #383838;
     display: flex;
     flex-direction: column;
@@ -265,7 +266,8 @@ nav label {
 .works_seeMore {
     color: white;
     text-align: center;
-    padding: 8px 0;
+    padding: 20px 0;
+    margin-top: 20px;
 }
 
 .works_seeMore p {
@@ -697,7 +699,7 @@ footer hr {
 
     /* works */
     .works_seeMore{
-        padding: 15px 0;
+        margin-top: 30px;
     }
 
 
