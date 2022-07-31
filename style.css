@@ -6,6 +6,7 @@
 body {
     font-family: sans-serif;
     cursor: default;
+    background-color: #383838;
 }
 
 /* navigation bar */
@@ -79,22 +80,24 @@ nav label {
 
 /* About section */
 .about {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     cursor: default;
+    background-color: #03c8a7;
+    border-radius: 0 0 530px 550px;
+    padding-bottom: 100px;
 }
 
-.about::before {
+/* .about::before {
     content: "";
     background-color: #03c8a7;
     height: 130%;
     position: absolute;
     width: 100%;
     border-radius: 0 0 595px 610px;
-}
+} */
 
 .about_text {
     text-align: center;
@@ -238,9 +241,8 @@ nav label {
 
 /* works */
 .works {
-    height: 82vh;
     background-color: #383838;
-    padding-top: 190px;
+    /* padding-top: 190px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -452,7 +454,6 @@ nav label {
 
 /* footer styling */
 footer {
-    height: 500px;
     background-color: #151414;
     padding: 0 10%;
     color: white;
@@ -476,7 +477,6 @@ footer hr {
 
 /* footer second */
 .footer_second {
-    height: 350px;
     display: flex;
 }
 
@@ -604,18 +604,18 @@ footer hr {
 /* RESPONSIVENESS */
 
 @media only screen and (max-width:320px){
-    .about:before{
+    /* .about:before{
         height: 310% !important;
-    }
+    } */
 }
 
 @media only screen and (max-width:768px) and (min-width:376px){
     
     
 
-    .about::before {
+    /* .about::before {
         border-radius: 0 0 350px 350px !important;
-    }
+    } */
 }
 
 
@@ -674,13 +674,14 @@ footer hr {
     .about {
         height: fit-content;
         padding: 0 15px;
+        padding-bottom: 100px;
         justify-content: start;
     }
 
-    .about::before {
+    /* .about::before {
         height: 300%;
         border-radius: 0 0 140px 140px;
-    }
+    } */
 
     .about_text {
         padding: 30px 0;
@@ -718,10 +719,9 @@ footer hr {
 
 
     /* works */
-    .works {
-        height: 90vh;
+    /* .works {
         padding-top: 110px;
-    }
+    } */
 
 
 
@@ -869,7 +869,6 @@ footer hr {
 
     /* footer styling */
     footer {
-        height: 171vh;
         padding: 25px 15px;
         text-align: center;
     }
@@ -891,7 +890,6 @@ footer hr {
     /* footer second */
     .footer_second {
         display: block;
-        height: 275px;
     }
 
     .footer_three {
